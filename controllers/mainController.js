@@ -12,8 +12,7 @@ module.exports = {
     getProdcts:  async (req, res) => {
         try {
             const response = await axios.get("https://fakestoreapi.com/products", req.body);
-            console.log(response.data)
-           res.json(response.data);
+                   res.json(response.data);
        } catch (error) {
            console.error('Error forwarding the request:', error);
            res.status(500).json({ error: 'Failed to forward the request' });
