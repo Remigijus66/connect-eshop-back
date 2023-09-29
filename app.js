@@ -4,7 +4,7 @@ const app = express()
 const mainRouter = require('./router/mainRouter')
 require("dotenv").config()
 const colors = require('colors')
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 4001;
 
 
 const http = require("http").createServer(app)
